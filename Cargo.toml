@@ -1,7 +1,8 @@
 [package]
 name = "bmetal"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Daniel P. Teberian"]
 description = "A simple, bare-bones crate for working with bare-metal targets."
 edition = "2018"
 license = "Apache-2.0"
+categories = ["no-std", "embedded"]
