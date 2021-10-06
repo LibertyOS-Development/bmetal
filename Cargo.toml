@@ -1,6 +1,6 @@
 [package]
 name = "bmetal"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Daniel P. Teberian"]
 description = "A simple, bare-bones crate for working with bare-metal targets."
 edition = "2018"
