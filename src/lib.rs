@@ -1,13 +1,20 @@
+// BMETAL: A simple crate to provide the basic abstractions that one would need for developing for bare-metal targets.
 #![no_std]
 
 use core::cell::UnsafeCell;
 use core::marker::PhantomData;
+
+// CritSect: This is a token that, when used, indicates that there is code
+// being executed, by the current code, within a critical section. This token
+// is designed to let the system know about the aforementioned situation, so
+// that nothing interrupts the code that is being executed.
 
 #[derive(Clone, Copy, Debug)]
 pub struct CritSect<'cs>
 {
 	_0: PhantomData<&'cs ()>,
 }
+
 impl<'cs> CritSect<'cs>
 {
 	#[inline(always)]
